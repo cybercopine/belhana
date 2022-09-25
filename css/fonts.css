@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Vallisa';
+    src: url('fonts/Vallisa.ttf') format('truetype');
+
+}
+
+@font-face {
+    
+    font-family: 'Jitterbug';
+    src: url('fonts/Jitterbug/Jitterbug-mLX49.ttf') format('truetype');
+
+    font-family: 'Margin';
+    src: url('fonts/Margin/MarginFont.otf') format('opentype');
+
+    font-family: 'Honey Pie';
+    src: url('fonts/Honey-Pie/HoneyPie-Regular.otf') format('opentype');
+
+    font-family: 'Serif Display';
+    src: url('fonts/Serif-Display/Serif-Display.ttf') format('truetype');
+
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/Montserrat.ttf') format('truetype');
+
+    font-family: 'Poppins';
+    src: url('fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+

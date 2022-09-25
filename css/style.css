@@ -1,0 +1,416 @@
+body {
+    background-color: #FFFCF5;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Coustard', Helvetica, sans-serif;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+#logo {
+    margin: 1% auto 0 7.5%; 
+
+}
+
+.nav-items a, .nav-icons a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-items a:hover, .nav-icons a:hover {
+   opacity: 0.7;
+}
+
+.nav-icons li, .nav-items li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.nav-items li {
+    padding: 0 20px;
+}
+
+.nav-icons li {
+    justify-content: space-evenly;
+    margin-right: 25px;
+}
+
+.headline, #prepare-it-yourself h1 {
+    width: 35%;
+    margin-top: 12%;
+    margin-left: 7.5%;
+      
+}
+
+.headline h1 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+}
+
+.headline p {
+    font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.main-button {
+    margin-top: 15%;
+} 
+
+.check-button {
+    text-align: end;
+    
+    margin-top: 3%;
+}
+
+.main-button a, .check-button a, .recipe-of-month-button a {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: #F35F37;
+    color: white;
+    padding: 15px 35px 15px 35px;
+}
+
+.chef-recommendations {
+    margin-top: 10%;
+    font-family: 'Coustard', Helvetica, sans-serif;
+    margin-left: 1%;
+}
+
+.cuisine {
+    text-align: center;
+    font-family: 'Coustard', Helvetica, sans-serif; 
+}
+
+.line {
+    margin-top: 11px;
+    height:5px;
+    background: repeating-linear-gradient(to right,#FFBF5B 0,#FFBF5B 120px,transparent 10px,transparent 150px);
+}
+
+#dashed-lines {
+    margin-bottom: 2%;
+    
+}
+.card {
+    border: 1px solid #707070;
+    width: 350px;
+    height: auto;
+    margin: auto;
+    
+}
+
+
+.card img {
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+.card-title {
+    padding: 25px; padding-bottom: 0;
+    font-family: 'Coustard', Helvetica, sans-serif;
+}
+
+.card-text {
+    padding: 25px;
+    padding-top: 0;
+    font-family: 'Poppins', Helvetica, sans-serif;
+
+}
+
+.duration {
+    margin-left: 7%;
+    top: 0;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+#recipe-of-month  {
+    background-color:#FFE5BB;
+    margin: 5% 0 0 0 ;
+    height: auto;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    padding: 5%;
+    
+   
+    
+}
+
+
+#recipe-of-month-image {
+    background-image: url("../images/sample5.jpg");
+    background-size: cover;
+    background-color: #FFBF5B;
+    height: 70vh;
+    border: 1px solid #707070;
+}
+
+#recipe-of-month-text {
+    background-color: white;
+    padding: 0;
+    border: 1px solid #707070;
+}
+
+#recipe-of-month-title {
+    background-color: #FFBF5B;
+    color: #fff;
+    float: right;
+    font-family: 'Coustard',Helvetica, sans-serif;
+    padding: 2%;
+    margin: 0;
+    width: 40%;
+}
+
+
+#recipe-of-month-icons {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    
+}
+
+.tag {
+   margin-left: 2%; 
+   font-family: 'Poppins', Helvetica, sans-serif;
+   font-style: italic;
+}
+
+
+#recipe-of-month h3 {
+    font-family: 'Coustard',Helvetica, sans-serif;
+    padding: 0 3% 0 8%;
+    font-size: 36px;
+      
+}
+
+#recipe-of-month-content {
+    padding: 0 6% 0 8%;
+    font-family: 'Poppins',Helvetica, sans-serif;
+    font-size: 16px;
+    text-align:justify;  
+    text-justify: inter-word;
+}
+
+.recipe-of-month-button {
+    margin: 12% 0 0 12%;
+}
+
+#prepare-it-yourself {
+    margin-top: 15%;
+}
+
+#prepare-it-yourself h1 {
+    font-family: 'Coustard',Helvetica, sans-serif;
+}
+
+
+/* **************************RECIPES PAGE *******************/
+
+.recipe-title {
+    background-image: url("../images/titlebg.png");
+    background-size: cover;
+    background-color: #FEE6E6;
+    height: 50vh;
+    
+    
+}
+
+.recipe-title h1 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    letter-spacing: 7px;
+    padding-top: 10%;
+}
+
+.jump-to-recipe {
+    margin-top: 2%;
+    
+}
+
+.jump-to-recipe a {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: #F35F37;
+    color: white;
+    padding: 12px 62px 12px 62px;
+}
+
+#recipe {
+    margin-left: 7.5%;
+}
+
+#recipe h3 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    margin-top: 12%;
+
+}
+
+#recipe img {
+    width: 90%;
+    height: auto;
+    margin-top: 4%;
+}
+
+#recipe p {
+    width: 90%;
+    margin-top: 2%;
+}
+
+.sauce h5 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    margin-top: 5%;
+}
+
+.ingredients-list {
+    columns: 5;
+    -webkit-columns: 5;
+    -moz-columns: 5;
+  }
+  
+  .ingredients-list {
+    list-style: none;
+  }
+  
+  .ingredients-list li::before {
+    content: '\2022';
+    width: 10%;
+    margin-left: -25%;
+    color:#F35F37;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 20px;
+  }
+
+  .olist {
+    padding: 2% 0 0 0;
+    list-style: none;
+    counter-reset: olist;
+  }
+  
+  .olist li {
+    margin: 0 0 2% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    line-height: 1.6;
+
+  }
+  .olist li:before {
+    content: counter(olist);
+    counter-increment: olist;
+    background-color:#F35F37;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+    color: white;
+    font-family: 'Coustard',Helvetica, sans-serif;
+    margin-right: 2%;
+    
+  }
+
+  #recipe-steps {
+    background-color: rgb(199, 62, 62);
+    height: auto;
+    padding: 5%;
+    margin: 40% 0 0 7.5%;
+}
+
+#instruction-headers {
+    float: left;
+}
+
+#instruction-headers h1 {
+    font-family: 'Coustard',Helvetica, sans-serif;
+    color:#F35F37;
+    text-transform: uppercase;
+    font-weight: regular;
+    font-size: 50px;
+}
+
+#instruction-headers h2 {
+    font-family: 'Jitterbug',Helvetica, sans-serif;
+    color:#3C312B;
+    font-size: 120px;
+    
+}
+
+#instruction-icons {
+    font-family: 'Coustard',Helvetica, sans-serif;
+    padding-left: 35%;
+}
+
+/*************** ABOUT ME SECTION **********************/
+
+
+#meet-the-chef h3 {
+    margin-top: 23%;
+    margin-bottom: 9%;
+    font-family: 'Coustard', Helvetica, sans-serif;
+    text-align: center;
+}
+
+.about-me {
+    background-color: #FEE6E6;
+}
+
+.about-me h2 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 5%;
+    
+
+}
+
+.about-me p, .prepare-it-yourself p {
+    padding: 10%;
+
+}
+
+.cat-1, .cat-2 {
+    margin-bottom: 10%;
+    clear: both;
+}
+
+.cat-1 img, .cat-2 img {
+   margin: 10%;
+}
+
+.cat-1 img {
+    float: left;
+
+}
+
+.cat-2 img {
+    float: right;
+}
+
+.cat-2 p {
+    margin-top: 6%;
+}
+
+.about-me h5 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    padding: 10% 4% 4% 10%;
+
+}
+
+.follow-us {
+    padding: 10%;
+}
+
+.follow-us a {
+    cursor: pointer;
+    text-decoration: none;
+    color:#F35F37;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    font-size: 1.5em;
+}
+
+.prepare-it-yourself {
+    background-color: #FEE6E6;
+}
