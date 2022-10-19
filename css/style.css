@@ -1,5 +1,9 @@
+html {
+    height: 100%; 
+}
 body {
     background-color: #FFFCF5;
+    height: 100%;
 }
 
 nav {
@@ -39,7 +43,7 @@ nav {
     margin-right: 25px;
 }
 
-.headline, #prepare-it-yourself h1 {
+.headline, .prepare-it-yourself h1 {
     width: 35%;
     margin-top: 12%;
     margin-left: 7.5%;
@@ -200,15 +204,39 @@ nav {
     margin: 12% 0 0 12%;
 }
 
-#prepare-it-yourself {
+.prepare-it-yourself {
     margin-top: 15%;
+    padding: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: start;
 }
 
-#prepare-it-yourself h1 {
+.prepare-it-yourself p {
+ font-family: 'Coustard', Helvetica, sans-serif;
+ font-weight: normal;
+}
+
+
+.prepare-it-yourself i {
+    margin-top: 5%;
+    margin-right: 6%;
+}
+
+
+.prepare-it-yourself h1 {
     font-family: 'Coustard',Helvetica, sans-serif;
 }
 
+.prepare-it-yourself img {
+    height: 300px;
+    width: auto;
+}
 
+.brief-description {
+    font-family: 'Coustard', Helvetica, sans-serif;
+}
 /* **************************RECIPES PAGE *******************/
 
 .recipe-title {
@@ -233,7 +261,7 @@ nav {
     
 }
 
-.jump-to-recipe a {
+.jump-to-recipe a, .print-recipe-btn a {
     font-family: 'Coustard', Helvetica, sans-serif;
     text-decoration: none;
     background-color: #F35F37;
@@ -287,61 +315,40 @@ nav {
     font-size: 20px;
   }
 
-  .olist {
+  .olist, .yellow-olist {
     padding: 2% 0 0 0;
     list-style: none;
     counter-reset: olist;
   }
-  
-  .olist li {
+
+  .olist li, .yellow-olist li {
     margin: 0 0 2% 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
-    line-height: 1.6;
 
   }
-  .olist li:before {
+  .olist li:before, .yellow-olist li:before {
     content: counter(olist);
     counter-increment: olist;
-    background-color:#F35F37;
     font-size: 20px;
-    padding: 10px 15px 10px 15px;
+    text-align: center;
+    padding: 0.7% 1% 0.6% 1%;
+    width: max(5%, 5%);
     color: white;
-    font-family: 'Coustard',Helvetica, sans-serif;
-    margin-right: 2%;
-    
+    float: left;
+    font-family: 'Coustard', Helvetica, sans-serif;
   }
 
-  #recipe-steps {
-    background-color: rgb(199, 62, 62);
-    height: auto;
-    padding: 5%;
-    margin: 40% 0 0 7.5%;
+.olist li:before {
+    background-color:#F35F37;
 }
 
-#instruction-headers {
-    float: left;
+.yellow-olist li:before {
+    background-color:#FFBF5B;
 }
-
-#instruction-headers h1 {
-    font-family: 'Coustard',Helvetica, sans-serif;
-    color:#F35F37;
-    text-transform: uppercase;
-    font-weight: regular;
-    font-size: 50px;
-}
-
-#instruction-headers h2 {
-    font-family: 'Jitterbug',Helvetica, sans-serif;
-    color:#3C312B;
-    font-size: 120px;
-    
-}
-
-#instruction-icons {
-    font-family: 'Coustard',Helvetica, sans-serif;
-    padding-left: 35%;
-}
+  .olist p, .yellow-olist p {
+    margin-left: 8%;
+  }
 
 /*************** ABOUT ME SECTION **********************/
 
@@ -360,12 +367,15 @@ nav {
 .about-me h2 {
     font-family: 'Coustard', Helvetica, sans-serif;
     text-align: center;
-    margin-top: 5%;
-    
-
+    margin-top: 5%;    
 }
 
-.about-me p, .prepare-it-yourself p {
+.about-me h5 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+    padding: 10% 4% 4% 10%;
+
+}
+.about-me p {
     padding: 10%;
 
 }
@@ -392,11 +402,6 @@ nav {
     margin-top: 6%;
 }
 
-.about-me h5 {
-    font-family: 'Coustard', Helvetica, sans-serif;
-    padding: 10% 4% 4% 10%;
-
-}
 
 .follow-us {
     padding: 10%;
@@ -413,4 +418,143 @@ nav {
 
 .prepare-it-yourself {
     background-color: #FEE6E6;
+}
+/******************* END OF PAGE DISTRIBUTION, START OF PRINT RECIPE *********************/
+.recipe-steps {
+    height: auto;
+    margin: 10% 10% 0 10%;
+    border: 1px solid black;
+    background-color: #FEE6E6;
+}
+
+
+#instruction-headers {
+    float: left;
+}
+
+.instructions {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 90px;
+    justify-content: space-evenly;
+    background-color: #fff;
+    background: url('../images/instructions-header.svg') bottom;
+} 
+
+#instruction-headers h1 {
+    font-family: 'Coustard',Helvetica, sans-serif;
+    color:#F35F37;
+    text-transform: uppercase;
+    font-weight: regular;
+    font-size: 50px;
+}
+
+#instruction-headers h2 {
+    font-family: 'Jitterbug',Helvetica, sans-serif;
+    color:#3C312B;
+    font-size: 120px;
+    
+}
+
+#instruction-icons {
+    font-family: 'Coustard',Helvetica, sans-serif;
+    padding-left: 35%;
+}
+.print-recipe-btn {
+    margin-top: 20%;
+}
+
+#recipe-steps-details {
+    padding: 10%;
+    margin: 5% 8% 10% 8%;
+    background-color: white;
+}
+
+#recipe-steps-details h1 {
+    font-family: 'Jitterbug', Helvetica, sans-serif;
+}
+
+#recipe-steps-details p {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+}
+
+#recipe-steps-details h6 {
+    font-family: 'Coustard', Helvetica, sans-serif;
+}
+  
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 90%;
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #FEE6E6;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    opacity: 0.7;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #F35F37;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 4px;
+    width: 5px;
+    height: 12px;
+    padding: 7%;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+footer {
+    width: 100%;
+} 
+
+footer g {
+    position: absolute;
 }
